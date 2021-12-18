@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Añadir</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()" >
+    <ion-item>
+      <ion-label position="floating">Título</ion-label>
+      <ion-textarea formControlName="title" rows="6" cols="20" ></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Cuerpo</ion-label>
+      <ion-textarea formControlName="body" rows="6" cols="20" ></ion-textarea>
+    </ion-item>
+	
+		</form>
+  </ion-card>
+  
+
+</ion-content>
+<ion-footer>
+  <ion-button expand="full" fill="outline" (click)="modificar()">Añadir</ion-button>
+</ion-footer>

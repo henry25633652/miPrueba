@@ -1,0 +1,7 @@
+{
+  "name": "miPrueba",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
